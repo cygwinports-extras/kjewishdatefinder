@@ -6,8 +6,8 @@
  
 -INCLUDEPATH += $(KDEDIR)/include
 -LIBS += -L$(KDEDIR)/lib -lkdeui
-+INCLUDEPATH += /usr/include/kde
-+LIBS += -lkdeui -lkdecore
++INCLUDEPATH += /usr/include/kde3
++LIBS += -L/usr/lib/kde3/devel -lkdeui -lkdecore
  
  QMAKE_CXXFLAGS_RELEASE += `pkg-config libhdate --cflags`
  LIBS += `pkg-config libhdate --libs`
